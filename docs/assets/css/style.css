@@ -1,0 +1,353 @@
+@font-face {
+  font-family: yellosun;
+  src: url(../fonts/yellosun.ttf);
+}
+
+@font-face {
+  font-family: Letters For Learnes;
+  src: url(../fonts/LettersForLearners.ttf);
+}
+
+.tituloNav{
+  font-family: Letters For Learnes;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+nav {
+  background: #F7BDF0;
+  font-family: cursive;
+  font-style: oblique;
+}
+
+footer {
+  background: #FF82F5;
+  font-family: cursive;
+  font-style: oblique;
+}
+
+ul.socialIcons {
+  padding: 0;
+  text-align: center;
+}
+
+.socialIcons li {
+  background-color: yellow;
+  list-style: none;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  padding: 0.5em;
+  min-width: 1.28571429em;
+  max-width: 1.28571429em;
+  height: 1.28571429em;
+  white-space: nowrap;
+  line-height: 1.5em;
+  /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-right: 0.5em;
+}
+
+.socialIcons li:hover a {
+  max-width: 200px;
+  padding-right: 1em;
+}
+
+.socialIcons .facebook {
+  background-color: #3b5998;
+  box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+  background-color: #00aced;
+  box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+  box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .pinterest {
+  background-color: #c92228;
+  box-shadow: 0 0 16px #c92228;
+}
+
+.socialIcons .steam {
+  background-color: #666666;
+  box-shadow: 0 0 16px #666666;
+}
+
+body{
+  background-image: url("../img/fondoSamwi.jpg");
+}
+
+.encabezado {
+  font-family: yellosun;
+  font-size: 5.9rem;
+}
+
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: #666666;
+}
+
+.nav-link a:hover,
+.nav-link .active:hover,
+.nav-link li:hover>a{
+  text-decoration: none;
+  color: #666666;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    color: #1c3745;
+}
+
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+    color: #F7BDF0;
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+        left: -100%;
+    }
+}
+
+.portfolio {
+  padding-bottom: 60px;
+}
+
+.portfolio .portfolio-item {
+  background-color: #eee;
+  overflow: hidden;
+  min-height: 200px;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 0 30px 0;
+}
+
+.portfolio .portfolio-item img {
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  transition: all .3s linear;
+  text-align: center;
+  top: 10%;
+  left: 0;
+  right: 0;
+  color: #000000;
+}
+
+.portfolio .portfolio-item .portfolio-info h3 {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+  font-size: 1.7rem;
+  color: rgb(0, 0, 0);
+}
+
+.portfolio .portfolio-item:hover img {
+  opacity: 0.1;
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  top: calc(7% - 30px);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #68A4C4;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #68A4C4;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(30, 67, 86, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+.container .row .intro .cita{
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  text-align:center;
+}
+
+.container .row .intro{
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container .row .intro .info{
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  text-align:justify;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(108%);
+}
+
+.carousel-inner .carousel-item p{
+  color: #000000;
+  font-size: 23px;
+  text-align:justify;
+}
+
+.carousel-inner .carousel-item h5{
+  color: #000000;
+}
+
+.carousel-caption {
+  position:relative; 
+  right: 15%;
+  top: 0px; /* Cambiar bottom por top y los píxeles que necesites */
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 11%;
+  padding-right: 11%;
+  color: #fff;
+  text-align: left;
+  /* background-color: rgba(255, 255, 255, 0.5); Añadir para conseguir el fondo con opacidad */
+}
+
+.datos {
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding-left: 9%;
+  padding-right: 9%;
+  text-align: justify;
+}
+
+.referencias{
+  background-color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #FF82F5 !important;
+  border-color: #FF82F5;
+  color: #000000;
+}
